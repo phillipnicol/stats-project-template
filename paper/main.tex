@@ -1,0 +1,115 @@
+\documentclass[10pt]{article}
+\usepackage{setspace}
+%\doublespacing
+\usepackage[margin = 1 in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsthm, amssymb, amsmath}
+\usepackage{caption}
+\usepackage{verbatim}
+\usepackage{layouts}
+\usepackage[round]{natbib}
+\usepackage{subcaption}
+\bibliographystyle{abbrvnat}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem*{remark}{Remark}
+\setlength{\parindent}{0pt}
+
+\newcommand{\Title}{Paper Title Here}
+
+% Math shortcuts — add your own below
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    urlcolor=blue,
+    citecolor=blue
+}
+\usepackage{amsfonts}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage[noabbrev,capitalise]{cleveref}
+\creflabelformat{equation}{#2\textup{#1}#3}
+\numberwithin{equation}{section}
+
+
+\title{\Title}
+\author{Phillip B. Nicol}
+\date{
+\small{
+    \textit{Department of Statistics, University of Chicago, Chicago, IL 60637, USA} \\ [2ex]
+    $^*$ Correspondence: \href{mailto:pnicol@uchicago.edu}{pnicol@uchicago.edu} \\[2ex]
+    }
+    \normalsize{\today}
+}
+
+
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}
+Abstract goes here.
+\end{abstract}
+
+\section{Introduction}
+
+
+
+\section{Methods}
+
+\subsection{Notation}
+
+
+\section{Theory}
+
+
+\section{Results}
+
+\subsection{Simulation study}
+
+
+\subsection{Application}
+
+
+\section{Discussion}
+
+\bibliography{sources.bib}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Supplementary material
+
+\clearpage
+
+\setcounter{page}{1}
+\setcounter{section}{0}
+\setcounter{table}{0}
+\setcounter{figure}{0}
+\renewcommand{\theHsection}{SIsection.\arabic{section}}
+\renewcommand{\theHtable}{SItable.\arabic{table}}
+\renewcommand{\theHfigure}{SIfigure.\arabic{figure}}
+\renewcommand{\thepage}{S\arabic{page}}
+\renewcommand{\thesection}{S\arabic{section}}
+\renewcommand{\thetable}{S\arabic{table}}
+\renewcommand{\thefigure}{S\arabic{figure}}
+
+
+\begin{center}
+{\LARGE Supplementary Material for \\`` \Title ''}
+\end{center}
+
+\section{Proofs}
+
+
+\section{Supplementary figures}
+
+
+\end{document}
