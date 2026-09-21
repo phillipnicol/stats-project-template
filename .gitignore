@@ -1,0 +1,25 @@
+.Rproj.user
+.Rhistory
+*.RData
+*.Rdata
+.Ruserdata
+.DS_Store
+*.log
+*.rda
+*.Rda
+*.RDS
+*.png
+!docs/*.png
+!docs/**/*.png
+# but keep pngs inside paper_figs (and subfolders)
+!/paper_figs/
+!/paper_figs/*.png
+!/paper_figs/**/*.png
+*.mtx
+*.tsv
+*.xlsx
+*.npy
+*.csv
+*.gmt
+analysis/*/data/*
+!analysis/*/data/.gitkeep
